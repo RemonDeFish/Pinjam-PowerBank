@@ -9,5 +9,23 @@ package com.mycompany.pinjam.powerbank;
  * @author nikol
  */
 public class User {
+    private String nama;
+    private String NPM;
     
+    public User(String nama, String NPM){
+        this.nama = nama;
+        this.NPM = NPM;
+    }
+    
+    public String getNama(){
+        return nama;
+    }
+    
+    public String getNPM(){
+        return NPM;
+    }
+    @Override
+    public String toString(){
+        return nama + "(" + NPM + ")";
+    }
 }
