@@ -12,12 +12,8 @@ import java.awt.*;
 public class MainFrame extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainFrame.class.getName());
-    private JTextField txtNama;
-    private JTextField txtNim;
   
     private JComboBox<String> cbPowerbank;
-
-    private JTextArea areaData;
 
     private LoanManager manager;
     /**
@@ -46,8 +42,8 @@ public class MainFrame extends javax.swing.JFrame {
         panel = new javax.swing.JPanel();
         lblNama = new java.awt.Label();
         lblNIM = new java.awt.Label();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        txtNama = new javax.swing.JTextField();
+        txtNIM = new javax.swing.JTextField();
         PowerBank = new java.awt.Label();
         cbPowerBank = new javax.swing.JComboBox<>();
         btnPinjam = new javax.swing.JButton();
@@ -70,10 +66,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         lblNIM.setText("NIM");
 
-        jTextField1.setText("Nama");
+        txtNama.setText("Nama");
 
-        jTextField2.setText("NIM");
-        jTextField2.addActionListener(this::jTextField2ActionPerformed);
+        txtNIM.setText("NIM");
+        txtNIM.addActionListener(this::txtNIMActionPerformed);
 
         PowerBank.setText("Powerbank");
 
@@ -95,11 +91,11 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblNIM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
-                        .addComponent(jTextField2))
+                        .addComponent(txtNIM))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1))
+                        .addComponent(txtNama))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(PowerBank, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -116,11 +112,11 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNIM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNIM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PowerBank, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -137,9 +133,9 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtNIMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNIMActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtNIMActionPerformed
 
     private void cbPowerBankActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPowerBankActionPerformed
         // TODO add your handling code here:
@@ -153,12 +149,12 @@ public class MainFrame extends javax.swing.JFrame {
     private java.awt.Label PowerBank;
     private javax.swing.JButton btnPinjam;
     private javax.swing.JComboBox<String> cbPowerBank;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private java.awt.Label lblNIM;
     private java.awt.Label lblNama;
     private javax.swing.JPanel panel;
     private java.awt.TextArea textArea1;
+    private javax.swing.JTextField txtNIM;
+    private javax.swing.JTextField txtNama;
     // End of variables declaration//GEN-END:variables
     private void prosesPinjam() {
 
