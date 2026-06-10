@@ -10,22 +10,22 @@ package com.mycompany.pinjam.powerbank;
  */
 public class User {
     private String nama;
-    private String NPM;
+    private String NIM;
     
-    public User(String nama, String NPM){
+    public User(String nama, String NIM){
         this.nama = nama;
-        this.NPM = NPM;
+        this.NIM = NIM;
     }
     
     public String getNama(){
         return nama;
     }
     
-    public String getNPM(){
-        return NPM;
+    public String getNIM(){
+        return NIM;
     }
     @Override
     public String toString(){
-        return nama + "(" + NPM + ")";
+        return nama + "(" + NIM + ")";
     }
 }
