@@ -8,6 +8,17 @@ package com.mycompany.pinjam.powerbank;
  *
  * @author nikol
  */
+import java.time.LocalDate;
 public class Loan {
+    private User user;
+    private Powerbank powerBank;
     
+    public Loan(User user, Powerbank powerBank){
+        this.user = user;
+        this.powerBank = powerBank;
+    }
+    
+    public String getloan(){
+        return loan;
+    }
 }
