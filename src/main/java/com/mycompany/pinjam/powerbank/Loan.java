@@ -18,7 +18,16 @@ public class Loan {
         this.powerBank = powerBank;
     }
     
-    public String getloan(){
-        return loan;
+    public User getUser(){
+        return user;
+    }
+    
+    public Powerbank getPowerbank(){
+        return powerBank;
+    }
+    
+    @Override
+    public String toString(){
+        return user.getNama() + " meminjam " + Powerbank.getKode();
     }
 }
