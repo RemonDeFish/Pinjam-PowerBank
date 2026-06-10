@@ -6,7 +6,7 @@ package com.mycompany.pinjam.powerbank;
 
 /**
  *
- * @author nikol
+ * @author Raymond
  */
 import javax.swing.*;
 import java.awt.*;
@@ -97,8 +97,8 @@ public class MainFrame extends JFrame {
 
         User user = new User(nama, nim);
 
-        PowerBank pb =
-                new PowerBank(kode, kapasitas);
+        Powerbank pb =
+                new Powerbank(kode, kapasitas);
 
         Loan loan =
                 new Loan(user, pb);
@@ -118,9 +118,5 @@ public class MainFrame extends JFrame {
                 l.toString() + "\n"
             );
         }
-    }
-    @Override
-    void setVisible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

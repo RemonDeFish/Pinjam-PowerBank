@@ -28,6 +28,6 @@ public class Loan {
     
     @Override
     public String toString(){
-        return user.getNama() + " meminjam " + Powerbank.getKode();
+        return user.getNama() + " meminjam " + powerBank.getKode();
     }
 }
