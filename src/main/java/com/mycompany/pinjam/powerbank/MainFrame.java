@@ -13,7 +13,7 @@ public class MainFrame extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainFrame.class.getName());
   
-    private JComboBox<String> cbPowerbank;
+    // private JComboBox<String> cbPowerbank;
 
     private LoanManager manager;
     /**
@@ -48,10 +48,8 @@ public class MainFrame extends javax.swing.JFrame {
         cbPowerBank = new javax.swing.JComboBox<>();
         txtNama = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        btnPinjam = new javax.swing.JButton();
-        scrollPane1 = new java.awt.ScrollPane();
         areaData = new java.awt.TextArea();
-        m = new java.awt.Label();
+        btnPinjam = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -91,7 +89,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblNIM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(PowerBank, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtNIM, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -101,7 +99,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -115,7 +113,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(cbPowerBank, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(PowerBank, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19))
+                .addGap(30, 30, 30))
         );
 
         panel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 300, 130));
@@ -123,37 +121,32 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setAutoscrolls(true);
 
+        areaData.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+
         btnPinjam.setText("Pinjam");
         btnPinjam.addActionListener(this::btnPinjamActionPerformed);
-
-        areaData.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
-        scrollPane1.add(areaData);
-
-        m.setEnabled(false);
-        m.setVisible(false);
-        scrollPane1.add(m);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
-                .addGap(32, 32, 32))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(143, 143, 143)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnPinjam)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(37, Short.MAX_VALUE)
+                .addComponent(areaData, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(66, 66, 66)
+                .addGap(55, 55, 55)
                 .addComponent(btnPinjam)
-                .addGap(19, 19, 19)
-                .addComponent(scrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(areaData, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         panel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 360, 310));
@@ -203,7 +196,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_cbPowerBankActionPerformed
 
     private void btnPinjamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPinjamActionPerformed
-        // TODO add your handling code here:
+        prosesPinjam();
     }//GEN-LAST:event_btnPinjamActionPerformed
 
     /**
@@ -222,19 +215,17 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private java.awt.Label lblNIM;
     private java.awt.Label lblNama;
-    private java.awt.Label m;
     private javax.swing.JPanel panel;
-    private java.awt.ScrollPane scrollPane1;
     private javax.swing.JTextField txtNIM;
     private javax.swing.JTextField txtNama;
     // End of variables declaration//GEN-END:variables
     private void prosesPinjam() {
 
         String nama = txtNama.getText();
-        String nim = txtNim.getText();
+        String nim = txtNIM.getText();
 
         String pilihan =
-                cbPowerbank.getSelectedItem().toString();
+                cbPowerBank.getSelectedItem().toString();
 
         String kode =
                 pilihan.substring(0, 4);
